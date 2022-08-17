@@ -17,6 +17,7 @@ app.use("/api/blog",require("./routes/blog"))
 
 const PORT=8000
 
+// initialize sequelize and listen for app
 sequelize.sync().then(()=>{
     app.listen(PORT,()=>console.log("Server is running on port =>",PORT))
 }).catch((err)=>{
