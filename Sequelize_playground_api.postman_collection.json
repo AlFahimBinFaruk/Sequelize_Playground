@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "455955dd-4124-4e03-8253-0c0ec82fabb4",
+		"name": "Sequelize_playground_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21488815"
+	},
+	"item": [
+		{
+			"name": "get all blogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/blog",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"blog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create new blog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "fahim",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "my name is fhaim and this is my blog",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/blog/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"blog",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get blog details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/blog/a9fbda15-97ef-46b8-bfa5-7664b9318d20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"blog",
+						"a9fbda15-97ef-46b8-bfa5-7664b9318d20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit blog",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "suhan",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "this is the bog of suhan",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/blog/edit/a9fbda15-97ef-46b8-bfa5-7664b9318d20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"blog",
+						"edit",
+						"a9fbda15-97ef-46b8-bfa5-7664b9318d20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete blog",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/blog/delete/7cf127d4-14f4-4a0e-8bc1-fa2f9467134b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"blog",
+						"delete",
+						"7cf127d4-14f4-4a0e-8bc1-fa2f9467134b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
